@@ -1,0 +1,24 @@
+export const data={
+   Navbar:[
+    {
+        "id":1,
+        "linktext":"Home",
+        "link":"/"
+    },
+    {
+        "id":2,
+        "linktext":"About",
+        "link":"/about"
+    },
+    {
+        "id":3,
+        "linktext":"Products",
+        "link":"/products"
+    },
+    {
+        "id":3,
+        "linktext":"Contact",
+        "link":"/contact"
+    },
+   ]
+}
