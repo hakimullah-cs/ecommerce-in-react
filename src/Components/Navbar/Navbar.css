@@ -1,3 +1,28 @@
 .header{
     box-shadow: 0rem 0rem 4px grey;
 }
+
+@media screen and (max-width:768px) {
+    .navbar-list{
+          width:350px;
+          background:#212528;
+          position: absolute;
+          top: 0;
+          left: 0;
+          color: #fff;
+          height: 100vh;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          transform: translateX(-100%);
+          z-index: 999;
+          opacity: 1;
+          transition: all 0.3s ease-in-out;
+    }
+    .navbar-list.active{
+        transform: translateX(0);
+    }
+    .navbar-list li{
+        margin-bottom: 3rem;
+    }
+}

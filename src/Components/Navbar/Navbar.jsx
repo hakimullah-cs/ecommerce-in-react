@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo.png';
 import {data} from '../../Data/Data';
@@ -7,13 +7,17 @@ import {AiOutlineShoppingCart} from 'react-icons/ai';
 import {BiMenuAltRight} from 'react-icons/bi';
 
 const Navbar = () => {
+  const [Nav,setNav]=useState(false)
+  const ToggleMenu=()=>{
+       setNav(!Nav)
+  }
   return (
     <header className='w-full header bg-white px-3'>
       <nav className='px-3 m-auto h-[6rem] max-w-[1240px] w-full flex justify-between items-center'>
        <div className='w-[6rem] h-[5rem]'>
          <img src={logo} alt='Main-Logo' className='w-full h-full'/>
        </div>
-       <ul className='flex'>
+       <ul className={`navbar-list flex ${Nav === true ?'active':''}`}>
        {
         data.Navbar.map((navlink)=>{
           return (
@@ -30,7 +34,7 @@ const Navbar = () => {
           <AiOutlineShoppingCart className='text-5xl'/>
           <sup className='text-[2rem] absolute top-[-5px] right-[-10px]'>0</sup>
         </div>
-        <BiMenuAltRight className='text-5xl md:hidden block '/>
+        <BiMenuAltRight className='text-5xl md:hidden block ' onClick={ToggleMenu}/>
        </div>
       </nav>
     </header>
