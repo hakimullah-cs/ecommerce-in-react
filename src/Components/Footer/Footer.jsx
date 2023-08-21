@@ -22,14 +22,14 @@ const Footer = () => {
         <div className='sm:max-w-[300px] w-full p-3'>
           <h3 className='text-2xl font-semibold mb-5'>About Us</h3>
           <div className='flex gap-3 text-2xl'>
-          <div className=' p-3 rounded-full text-3xl border'>
+          <div className=' p-3 rounded-full text-3xl border hover:bg-[orange] duration-300'>
           <BiLogoLinkedin/>
           </div>
-          <div className=' p-3 rounded-full text-3xl border'>
+          <div className=' p-3 rounded-full text-3xl border hover:bg-[orange] duration-300'>
 
           <BiLogoGithub/>
           </div>
-          <div className=' p-3 rounded-full text-3xl border'>
+          <div className=' p-3 rounded-full text-3xl border hover:bg-[orange] duration-300'>
 
           <BiLogoTwitter/>
           </div>
