@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const HeroSec = ({myData}) => {
   return (
     <div className='wrapper p-5'>
-        <div className='flex border p-2 justify-center items-center gap-5 md:flex-nowrap flex-wrap '>
+        <div className='flex p-2 justify-center items-center gap-5 md:flex-nowrap flex-wrap '>
             <div className='md:w-[30rem] w-full p-3'>
                 <div className='font-bold text-[#9ba5ab] mb-1'>WELCOME TO</div>
                 <h3 className='text-5xl font-bold mb-3'>{myData.name}</h3>
