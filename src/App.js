@@ -6,6 +6,8 @@ import {
 import Navbar from './Components/Navbar/Navbar';
 import Footer from './Components/Footer/Footer';
 import './App.css';
+import Home from "./Pages/Home/Home";
+import About from "./Pages/Home/About/About";
 
 const Layout=()=>{
   return (
@@ -24,7 +26,11 @@ const router = createBrowserRouter([
     children:[
       {
         path:"/",
-        element:'home'
+        element:<Home/>
+      },
+      {
+        path:"/about",
+        element:<About/>
       },
       
       

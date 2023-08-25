@@ -2,3 +2,8 @@
     background:orange;
     color: #fff;
 }
+.wrapper{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+}
