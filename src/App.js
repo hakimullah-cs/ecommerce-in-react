@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer';
 import './App.css';
 import Home from "./Pages/Home/Home";
 import About from "./Pages/Home/About/About";
+import Contact from "./Pages/Contact/Contact";
 
 const Layout=()=>{
   return (
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path:"/about",
         element:<About/>
+      },
+      {
+        path:"/contact",
+        element:<Contact/>
       },
       
       
